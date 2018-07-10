@@ -1,0 +1,2 @@
+./quality 1.jpg 1.txt
+./GFR  -i 1.txt -o 1.fea

@@ -1,0 +1,90 @@
+root@master:/home/test_data/hh# python hadoop_test.py 
+18/05/20 17:20:16 INFO fs.TrashPolicyDefault: Namenode trash configuration: Deletion interval = 0 minutes, Emptier interval = 0 minutes.
+Deleted /user/hadoop/data/txt
+18/05/20 17:20:19 INFO fs.TrashPolicyDefault: Namenode trash configuration: Deletion interval = 0 minutes, Emptier interval = 0 minutes.
+Deleted /user/hadoop/data/img
+delete fileDIr successful
+Copy from local successful
+18/05/20 17:20:24 INFO fs.TrashPolicyDefault: Namenode trash configuration: Deletion interval = 0 minutes, Emptier interval = 0 minutes.
+Deleted /user/hadoop/data/output
+packageJobJar: [/tmp/hadoop-unjar9219050928783769521/] [] /tmp/streamjob3143776702234282470.jar tmpDir=null
+18/05/20 17:20:25 INFO client.RMProxy: Connecting to ResourceManager at master/192.168.123.1:8032
+18/05/20 17:20:25 INFO client.RMProxy: Connecting to ResourceManager at master/192.168.123.1:8032
+18/05/20 17:20:26 INFO mapred.FileInputFormat: Total input paths to process : 1
+18/05/20 17:20:26 INFO mapreduce.JobSubmitter: number of splits:2
+18/05/20 17:20:26 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1526801173631_0008
+18/05/20 17:20:26 INFO impl.YarnClientImpl: Submitted application application_1526801173631_0008
+18/05/20 17:20:26 INFO mapreduce.Job: The url to track the job: http://master:8088/proxy/application_1526801173631_0008/
+18/05/20 17:20:26 INFO mapreduce.Job: Running job: job_1526801173631_0008
+18/05/20 17:20:36 INFO mapreduce.Job: Job job_1526801173631_0008 running in uber mode : false
+18/05/20 17:20:36 INFO mapreduce.Job:  map 0% reduce 0%
+18/05/20 17:20:48 INFO mapreduce.Job:  map 67% reduce 0%
+18/05/20 17:33:08 INFO mapreduce.Job:  map 83% reduce 0%
+18/05/20 17:33:20 INFO mapreduce.Job:  map 83% reduce 17%
+18/05/20 17:37:05 INFO mapreduce.Job: Task Id : attempt_1526801173631_0008_m_000001_0, Status : FAILED
+AttemptID:attempt_1526801173631_0008_m_000001_0 Timed out after 600 secs
+Container killed by the ApplicationMaster.
+Container killed on request. Exit code is 143
+Container exited with a non-zero exit code 143
+
+18/05/20 17:37:06 INFO mapreduce.Job:  map 50% reduce 17%
+18/05/20 17:37:17 INFO mapreduce.Job:  map 83% reduce 17%
+18/05/20 17:53:35 INFO mapreduce.Job: Task Id : attempt_1526801173631_0008_m_000001_1, Status : FAILED
+AttemptID:attempt_1526801173631_0008_m_000001_1 Timed out after 600 secs
+18/05/20 17:53:36 INFO mapreduce.Job:  map 50% reduce 17%
+18/05/20 17:53:48 INFO mapreduce.Job:  map 83% reduce 17%
+18/05/20 18:10:04 INFO mapreduce.Job: Task Id : attempt_1526801173631_0008_m_000001_2, Status : FAILED
+AttemptID:attempt_1526801173631_0008_m_000001_2 Timed out after 600 secs
+18/05/20 18:10:05 INFO mapreduce.Job:  map 50% reduce 17%
+18/05/20 18:10:18 INFO mapreduce.Job:  map 83% reduce 17%
+18/05/20 18:26:36 INFO mapreduce.Job:  map 100% reduce 100%
+18/05/20 18:26:36 INFO mapreduce.Job: Job job_1526801173631_0008 failed with state FAILED due to: Task failed task_1526801173631_0008_m_000001
+Job failed as tasks failed. failedMaps:1 failedReduces:0
+
+18/05/20 18:26:36 INFO mapreduce.Job: Counters: 39
+	File System Counters
+		FILE: Number of bytes read=0
+		FILE: Number of bytes written=127611
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=169
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=3
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+	Job Counters 
+		Failed map tasks=4
+		Killed reduce tasks=1
+		Launched map tasks=5
+		Launched reduce tasks=1
+		Other local map tasks=3
+		Rack-local map tasks=2
+		Total time spent by all maps in occupied slots (ms)=4702294
+		Total time spent by all reduces in occupied slots (ms)=3205238
+		Total time spent by all map tasks (ms)=4702294
+		Total time spent by all reduce tasks (ms)=3205238
+		Total vcore-milliseconds taken by all map tasks=4702294
+		Total vcore-milliseconds taken by all reduce tasks=3205238
+		Total megabyte-milliseconds taken by all map tasks=4815149056
+		Total megabyte-milliseconds taken by all reduce tasks=3282163712
+	Map-Reduce Framework
+		Map input records=10
+		Map output records=120
+		Map output bytes=3331
+		Map output materialized bytes=3577
+		Input split bytes=103
+		Combine input records=0
+		Spilled Records=120
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=69
+		CPU time spent (ms)=79650
+		Physical memory (bytes) snapshot=279552000
+		Virtual memory (bytes) snapshot=2073067520
+		Total committed heap usage (bytes)=201326592
+	File Input Format Counters 
+		Bytes Read=66
+18/05/20 18:26:36 ERROR streaming.StreamJob: Job not successful!
+Streaming Command Failed!
+
